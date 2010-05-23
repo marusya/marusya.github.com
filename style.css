@@ -1,5 +1,5 @@
 body {
-    background-color: #4A4F43;
+    background-color: #558F6A;
     color: white;
     font: Verdana, Sans;
 }
@@ -8,7 +8,7 @@ body {
     width: 960px;
     background-color: #2e3436;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
 }
 
@@ -37,11 +37,29 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-size: medium;
+    text-align: center;
+}
+
+a:link {
+    color: #4C7159;
+}
+
+a:visited {
+    color: #558F6A;
+}
+
+#dost {
+   font-size: small;
+}
+
 #ava {
     float: right;
-    margin-left: 10px;
-    width: 213px;
-    height: 160px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 220px;
+    height: 230px;
 }
 
 #right { 
