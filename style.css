@@ -1,5 +1,5 @@
 body {
-    background-color: #558F6A;
+    background-color: #6C404E;
     color: white;
     font: Verdana, Sans;
 }
@@ -43,11 +43,11 @@ h3 {
 }
 
 a:link {
-    color: #4C7159;
+    color: #FFB8D0;
 }
 
 a:visited {
-    color: #558F6A;
+    color: #FF709D;
 }
 
 #dost {
@@ -57,9 +57,9 @@ a:visited {
 #ava {
     float: right;
     margin-left: 15px;
-    margin-bottom: 15px;
-    width: 220px;
-    height: 230px;
+    margin-bottom: 10px;
+    width: 208px;
+    height: 235px;
 }
 
 #right { 
