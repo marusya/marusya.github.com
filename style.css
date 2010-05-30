@@ -24,13 +24,14 @@ body {
 #footer {
     width: 960px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 p {
     text-align: justify;
-    font-size: 10pt;
-    text-indent: 20px;
+    font-size: 11pt;
+    line-height: 1.5;
+    text-indent: 30px;
 }
 
 h1 {
@@ -51,8 +52,13 @@ a:visited {
     color: #FF709D;
 }
 
+#contacts {
+    line-height: 1.3;
+}
+
 #dost {
-   font-size: small;
+   font-size: 11pt;
+   line-height: 1.5;
 }
 
 #ava {
@@ -72,4 +78,10 @@ a:visited {
 #left {
     float: left;
     width: 470px;
+}
+
+#chel {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
 }
