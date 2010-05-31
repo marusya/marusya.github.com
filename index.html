@@ -4,13 +4,39 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Marina Rendak</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-    <script type="text/javascript" src="niftycube.js"></script>
+    <script type="text/javascript" src="js/niftycube.js"></script>
+    <script src="js/jquery.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="js/jquery.timers.js" type="text/javascript" language="javascript" charset="utf-8"></script>
     
     <script type="text/javascript">
         window.onload=function(){
-            Nifty("div#wrapper","big");            
+            Nifty("div#wrapper","big");
         }
-    </script> 
+        
+        $(document).ready(function() {
+            var toggler = 1;
+            $('#chel2').hide();
+            $('#chel3').hide();
+            $("#chel1").everyTime(5000, function() {
+                if (toggler == 1) {
+                    $('#chel1').fadeOut("slow");
+                    $('#chel2').fadeIn("slow");
+                    toggler = 2;
+                }
+                else if (toggler == 2) {
+                    $('#chel2').fadeOut("slow");
+                    $("#chel3").fadeIn("slow");
+                    toggler = 3;
+                }
+                else {
+                    $('#chel3').fadeOut("slow");
+                    $('#chel1').fadeIn("slow");
+                    toggler = 1;
+                }
+            });
+        });
+        
+    </script>
     
 </head>
 <body>
@@ -49,6 +75,9 @@
                     <li>Стипендиат Губернатора Челябинской Области П.В.Сумина</li>
                </ul>
            </p>
+           <div id="chel2">
+               <img src="picture.png" width="80px" height="107px" />
+           </div>
         </div>
         
         <div class="sidebar" id="right">
@@ -57,6 +86,7 @@
             <p>Я родилась в 1988-м году в городе Магнитогорске, там же сейчас живу и учусь. Окончила Магнитогорскую СОШ №56 с углубленным изучением математики. В данный момент заканчиваю Магнитогорский государственный университет, физико-математический факультет по специальности "математические методы в экономике". Обладаю красным дипломом факультета индивидуальной специализации МаГУ по специальности "банковский менеджмент".</p>
             <p>С 2009-го года интересуюсь свободным программным обеспечением и занимаюсь его пропагандой. В качестве основной системы использую Ubuntu.</p>
             <p>Не курю, не пью, предпочитаю вести здоровый образ жизни. Активно занимаюсь спортом, люблю кататься на роликах и велосипедике, проводить время на природе.</p>
+            <p>И очень люблю своего <a href="http://vyazovoi.info/">Пашеньку</a>!</p>
         </div>
         
         <div class="clear"></div>
@@ -64,8 +94,11 @@
         <div id="footer">2010 &copy; Made by marusya.</div>
         
     </div>
-    <div id="chel">
+    <div id="chel1">
         <img src="picture.png" width="80px" height="107px" />
+    </div>
+    <div id="chel3">
+        <img src="picture2.png" width="80px" height="58px" />
     </div>
 </body>
 </html>
