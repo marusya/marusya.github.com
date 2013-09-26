@@ -1,13 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE>
 <html>
+
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Marina Rendak</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-    <script type="text/javascript" src="js/niftycube.js"></script>
-    <script src="js/jquery.js" type="text/javascript" language="javascript" charset="utf-8"></script>
-    <script src="js/jquery.timers.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <title>Marina Elms</title>
+    <style>
+        body {
+            background: #252525;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
     
+    <div>
+        <img src="under-construction.jpg" alt="under construction" style="margin: 0 auto; display: block;" />
+    </div>
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-16747797-1']);
@@ -19,39 +30,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    
-    <script type="text/javascript">
-        window.onload=function(){
-            Nifty("div#wrapper","big");
-        }
-        
-        $(document).ready(function() {
-            var toggler = 1;
-            $('#chel2').hide();
-            $('#chel3').hide();
-            $("#chel1").everyTime(5000, function() {
-                if (toggler == 1) {
-                    $('#chel1').fadeOut("slow");
-                    $('#chel2').fadeIn("slow");
-                    toggler = 2;
-                }
-                else if (toggler == 2) {
-                    $('#chel2').fadeOut("slow");
-                    $("#chel3").fadeIn("slow");
-                    toggler = 3;
-                }
-                else {
-                    $('#chel3').fadeOut("slow");
-                    $('#chel1').fadeIn("slow");
-                    toggler = 1;
-                }
-            });
-        });
-        
-    </script>
-    
-</head>
-<body>
-coming soon, <a href="http://paul.elms.pro">Paul</a>
+
 </body>
+
 </html>
